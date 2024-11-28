@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #a1c6ce;
+    color: #020566;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.home-img img {
+    width: 45vw;
+    float: right;
+    position: relative;
+    left: 20%;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-ctnr {
+    max-width: 600px;
+}
+
+.home-ctnr h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-ctnr h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a3fb7;
+}
+
+.home-ctnr p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-ctnr .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #02c0f4;
+    border: 2px solid #4740a9;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #041665;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #0c0c1e;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #293625;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #02c0f4;;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #1aa2c7;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 50%;
+    color: #03011b;;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.icon a:hover {
+    color: #000000;
+}
+
+.icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #04afd6;
+    z-index: -1;
+    transition: .5s;
+}
+
+.icon a:hover::before {
+    width: 100%;
+}
